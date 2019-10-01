@@ -9,55 +9,60 @@
 </head>
 
 <body>
-    <div class="jumbotron" style="background-color: chartreuse">
-        <h3 class="text-center">Crystal Collector Game</h3>
-        <br>
-        <p>You will be given a random number at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
-            total score.</p>
-        <p>You win the game by matching your total score to the random number, you lose the game if your total score
-            goes above the random number.</p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <p>Each time the game starts, the game will change the value of each crystal.</p>
+    <div class="jumbotron"
+        style="background:url(assets/images/crystal.jpg);no-repeat center center fixed; -webkit-background-size:cover; -moz-background-size:cover;">
+        <h3 class="text-center" style="font-family:fantasy; color: white">Crystal Collector Game</h3>
+        <hr class="my-2" style="border-color: white">
+        <li>You will be given a random number at the start of the game.</li>
+        <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+            total score.</li>
+        <li>You win the game by matching your total score to the random number, you lose the game if your total score
+            goes above the random number.</li>
+        <li>The value of each crystal is hidden from you until you click on it.</li>
+        <li>Each time the game starts, the game will change the value of each crystal.</li>
+            <hr class="my-2" style="border-color: white">
+            <br>
 
-    </div>
-    <div class="container">
+            <div class="container">
 
-        <div class="row">
+                <div class="row">
 
-            
-            <div class="col-lg-8">
-                <div class="card">
-                    <h3 class="card-header">Crystals</h3>
 
-                    <div class="card-body">
-                        <button id="red" class="btn btn-primary btn-lg"><span>Ruby <img src="assets/images/ruby.png"
-                                    height="60" width="60"></span></button>
-                        <button id="blue" class="btn btn-primary btn-lg"><span>Diamond <img
-                                    src="assets/images/diamond.png" height="60" width="60"></span></button>
-                        <button id="yellow" class="btn btn-primary btn-lg"><span>Topaz <img
-                                    src="assets/images/topaz.png" height="60" width="60"></span></button>
-                        <button id="green" class="btn btn-primary btn-lg"><span>Emerald <img
-                                    src="assets/images/Emerald.png" height="60" width="60"></span></button>
-                        <br><br>
+                    <div class="col-lg-4.75">
+                        <div class="card">
+                            <h3 class="card-header text-center"
+                                style="background-color: cadetblue; font-family: fantasy">Crystals</h3>
 
+                            <div class="card-body" style="background-color: midnightblue">
+                                <button id="red" class="btn btn-danger btn-lg"><span><img src="assets/images/ruby.png"
+                                            height="60" width="60"></span></button>
+                                <button id="blue" class="btn btn-primary btn-lg"><span><img
+                                            src="assets/images/diamond.png" height="60" width="60"></span></button>
+                                <button id="yellow" class="btn btn-warning btn-lg"><span><img
+                                            src="assets/images/topaz.png" height="60" width="60"></span></button>
+                                <button id="green" class="btn btn-success btn-lg"><span><img
+                                            src="assets/images/Emerald.png" height="60" width="60"></span></button>
+
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="card">
-                    <h3 class="card-header">Score Board</h3>
-                    <div class="card-body">
-                        <p id="wins">Wins: </p>
-                        <hr>
-                        <p id="losses">Losses: </p>
-                        <hr>
-                        <p id="score">Score: </p>
-                        <hr>
-                        <h1 id="goal">Target: </h1>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <h3 class="card-header text-center"
+                                style="background-color:cadetblue; font-family: fantasy ">Score Board</h3>
+                            <div class="card-body" style="background-color: midnightblue">
+                                <p id="wins">Wins: </p>
+                                <hr class="my-3" style="border-color: white">
+                                <p id="losses">Losses: </p>
+                                <hr class="my-3" style="border-color: white">
+                                <p id="score">Score: </p>
+                                <hr class="my-3" style="border-color: white">
+                                <h1 id="goal">Target: </h1>
+                            </div>
+                        </div>
                     </div>
-                </div>
 </body>
 
 </html>

@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    var audioWin = new Audio("assets/sounds/applause7.mp3");
+    var audioLose = new Audio("assets/sounds/boo2.mp3");
     var goalNum = Math.floor(Math.random() * 101 + 19);
     var score = 0;
     var wins = 0;
@@ -64,10 +66,14 @@ $(document).ready(function () {
         score = score + rubyNum;
         $("#score").text("Score: " + score);
         if (score === goalNum) {
+            audioWin.play();
+            alert("You Won!");
             won();
             // restartGame();
         }
         if (score > goalNum) {
+            audioLose.play();
+            alert("You Lost!");
             lost();
             // restartGame();
         }
@@ -78,10 +84,14 @@ $(document).ready(function () {
         score = score + diamondNum;
         $("#score").text("Score: " + score);
         if (score === goalNum) {
+            audioWin.play();
+            alert("You Won!");
             won();
             // restartGame();
         }
         if (score > goalNum) {
+            audioLose.play();
+            alert("You Lost!");
             lost();
             // restartGame();
         }
@@ -91,10 +101,14 @@ $(document).ready(function () {
         score = score + topazNum;
         $("#score").text("Score: " + score);
         if (score === goalNum) {
+            audioWin.play();
+            alert("You Won!");
             won();
             // restartGame();
         }
         if (score > goalNum) {
+            audioLose.play();
+            alert("You Lost!");
             lost();
             // restartGame();
         }
@@ -105,10 +119,14 @@ $(document).ready(function () {
         score = score + emeraldNum;
         $("#score").text("Score: " + score);
         if (score === goalNum) {
+            audioWin.play();
+            alert("You Won!");
             won();
             // restartGame();
         }
         if (score > goalNum) {
+            audioLose.play();
+            alert("You Lost!");
             lost();
             // restartGame();
         }
